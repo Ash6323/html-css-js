@@ -62,6 +62,7 @@
 }
 
 .card-title {
+    margin-top: 0px;
     margin-bottom: var(--bs-card-title-spacer-y)
 }
 
