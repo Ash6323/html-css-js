@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Header, Sidebar and Table</title>
+        <link rel="stylesheet" href="./css/sections-and-tables.css">
+    </head>
+    
+    <body>
+        <header>          
+            <a style="margin-left: 120px;" href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <div class="header-img"></div>
+        </header>
+
+        <div class="sidebar">
+            <a style="margin-top: 2px;" href="#home">Home</a>
+            <a class="active" href="#news">Tables</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+
+        <div style="margin-top: 60px;">
+            <table class="center" style="margin-left: auto; margin-right: auto; width: 50%;">
+                <tr>
+                    <th></th>
+                    <th></th> 
+                    <th>Bilal</th>
+                    <th>Qadir</th>       
+                </tr>
+                <tr>
+                    <td rowspan="2" class="bold">Favorite</td>
+                    <td class="bold">Color</td>
+                    <td>Blue</td>
+                    <td>Purple</td>
+                </tr>
+                <tr>
+                    <td class="bold">Flavor</td>
+                    <td>Banana</td>
+                    <td>Chocolate</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="bold left-right-padding">Least Favorite</td>
+                    <td class="bold">Color</td>
+                    <td>Green</td>
+                    <td>Red</td>
+                </tr>
+                <tr>
+                    <td class="bold">Flavor</td>
+                    <td>Mint</td>
+                    <td>Walnut</td>
+                </tr>
+            </table>
+        </div>    
+        
+        <div style="margin-top: 50px;">
+            <table style="margin-left: auto; margin-right: auto; width: 50%;">
+                <tr class="bold">
+                    <th colspan="6" class="center">Time Table</th>
+                </tr>
+                <tr class="bold">
+                    <td rowspan="6" class="center" style="padding-inline: 20px;">Hours</td>
+                    <td class="center">Mon</td>
+                    <td class="center">Tue</td>
+                    <td class="center">Wed</td>
+                    <td class="center">Thu</td>
+                    <td class="center">Fri</td>
+                </tr>
+                <tr class="left">
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Arts</td>
+                </tr>
+                <tr class="left">
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Arts</td>
+                </tr>
+                <tr class="bold">
+                    <td colspan="5" class="center">LUNCH</td>
+                </tr>
+                <tr class="left">
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td rowspan="2">Project</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

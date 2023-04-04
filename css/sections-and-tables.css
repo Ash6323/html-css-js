@@ -1,0 +1,88 @@
+header 
+{
+    display: block;
+    background-color: #333333c7;
+    overflow: hidden;
+}
+header a 
+{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+header a:hover 
+{
+    background-color: #04AA6D;
+    color: black;
+}
+header a.active 
+{
+    background-color: #71827c;
+    color: white;
+}
+.sidebar 
+{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.sidebar a 
+{
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+.sidebar a.active 
+{
+    background-color: #04AA6D;
+    color: white;
+} 
+.sidebar a:hover:not(.active) 
+{
+    background-color: #555;
+    color: white;
+}
+.center 
+{
+    text-align: center;
+}
+table
+{
+    border: 1px solid black;
+}
+th, td 
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    padding-inline: 10px;
+}
+.bold
+{
+    font-weight: bold;
+}
+.left
+{
+    text-align: left;
+}
+.left-right-padding
+{
+    padding-inline: 50px;
+}
+.header-img
+{
+    background-image: url("../res/IX-logo-1.png");
+    background-size: cover;
+    margin-top: 6px;
+    margin-left: 30px;
+    height: 45px;
+    width: 65px;
+}
