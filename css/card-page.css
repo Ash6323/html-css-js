@@ -1,0 +1,68 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.content {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 0px;
+    min-height: 100vh;
+    transition: 0.5s;
+}
+.navbar {
+    position: relative;
+    background-color: rgb(31, 158, 226);
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    min-height: 8vh;
+    width: 100%;
+    height: 50px;
+}
+.navbar a {
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar-toggler-icon{
+    margin: 10px;
+    vertical-align: middle;
+}
+.nav-links {
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li {
+    margin-top: 5px;
+    vertical-align: middle;
+    list-style: none;
+    position: relative;
+}
+.nav-links img {
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+  }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: -50px;
+}
+.avatar {
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px 5px 5px 5px;
+  }
+.user-name {
+    vertical-align: middle;
+    margin-left: 4px;
+}
+/* .home-bar {
+    position: relative;
+    margin-top: 100px;
+    padding-top: 20px;
+    height: 80px;
+    width:1000px;
+} */
