@@ -3,6 +3,8 @@
 */
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=PT+Sans:400,700";
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -30,7 +32,7 @@ a:focus {
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-btn {
@@ -62,6 +64,7 @@ a:focus {
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
+    padding-top: 40px;
 }
 
 #sidebar.active {
@@ -69,8 +72,9 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 0px;
-    background: #834747;
+    padding-top: 20px;
+    margin-top: -40px;
+    background: #ffffff;
 }
 #sidebar .sidebar-header img{
     width:200px; 
@@ -146,16 +150,100 @@ a.article:hover {
     background: #6d7fcc !important;
     color: #fff !important;
 }
+/* ---------------------------------------------------
+    HEADER STYLE
+----------------------------------------------------- */
+.search-bar {
+	width: 120%;
+	position: relative;
+    vertical-align: middle;
+	height: 60px;
+	top: 3%;
+	transform: translateY(-50%);
 
+    margin-left: 10px;
+}
+.search {
+	padding: 0px 30px;
+	font-size: 18px;
+	width: 820px;
+	height: 35px;
+	border-width: 0.5px;
+    border-color: rgb(224, 220, 220);
+	border-radius: 20px 0 0 20px;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.search-bar input {
+	box-sizing: border-box;
+    border-width: 0.5px;
+    border-color: rgb(224, 212, 212);
+	font-size: 13px;
+	vertical-align: top;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+}
+.search-bar-submit {
+	cursor: pointer;
+	border: none;
+	border-radius: 0 20px 20px 0;
+    font-weight: 700;
+	display: inline-block;
+	width: 70px;
+	height: 35px;
+    box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+}
+.log-time-clickable {
+    position: relative;
+    margin-left: 60%;
+}
+.log-time-button {
+    vertical-align: middle;
+    margin-left: 30px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+.bell-icon {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.avatar {
+    margin-left: -10px;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+.user-name {
+    vertical-align: middle;
+    margin-left: 2px;
+}
+.search-bar a {
+    text-decoration: none; 
+    color: black;
+}
+.search-bar a[data-toggle="collapse"] {
+    position: relative;
+    padding: 35px;
+}
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
 
 #content {
     width: 100%;
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 0px;
     min-height: 100vh;
     transition: all 0.3s;
+}
+.content-area {
+    height: 97%;
+    background-color: #c1d4de38;
 }
 
 /* ---------------------------------------------------
