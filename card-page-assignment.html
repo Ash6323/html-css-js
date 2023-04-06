@@ -8,18 +8,14 @@
         <link rel="stylesheet" href="./css/card-page.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-        <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
     </head>
     <body>
         <nav class="navbar navbar-dark nav-justified d-flex">
             <a href="#">
-                <span class="navbar-toggler-icon my-toggler">
-                </span>
+                <span class="navbar-toggler-icon my-toggler"></span>
             </a>
             <div class="heading">
-
-                <h4>Navigation Bar</h4>
-        
+                <h4>Navigation Bar</h4>      
             </div>           
             <ul class="nav-links">
                 <img src="./res/img_avatar.png">
@@ -27,32 +23,31 @@
                     <img src="./res/img_avatar.png" alt="Avatar" class="avatar">
                     <span class="user-name">SupplierTest11</span> 
                 </a>
-            </ul>
-            
+            </ul>           
         </nav>
-        <div class="row justify-content-between mr-auto ml-auto home-bar">
+        <div class="row justify-content-between mx-auto home-bar">
             <div>
                 <label>Home</label>
-                <img src="./res/IX-logo-1.png" style="width: 50; height: 30px;" alt="IX-Logo">
-                <img src="./res/IX-logo-1.png" style="width: 50; height: 30px;" alt="IX-Logo">
-                <img src="./res/IX-logo-1.png" style="width: 50; height: 30px;" alt="IX-Logo">
-                <img src="./res/IX-logo-1.png" style="width: 50; height: 30px;" alt="IX-Logo">
+                <img src="./res/IX-logo-1.png" alt="IX-Logo">
+                <img src="./res/IX-logo-1.png" alt="IX-Logo">
+                <img src="./res/IX-logo-1.png" alt="IX-Logo">
+                <img src="./res/IX-logo-1.png" alt="IX-Logo">
             </div>
         </div>
         <div class="row d-flex justify-content-between mx-auto">
             <div class="col d-flex mt-2">
                 <ul class="nav nav-pills nav-fill">
                     <li>
-                        <a class="nav-link bg-dark " href="#">Draft</a>
+                        <a class="nav-link" href="#">Draft</a>
                     </li>
                     <li>
-                        <a class="nav-link active" aria-current="page" href="#">Open</a>
+                        <a class="nav-link nav-link-active" aria-current="page" href="#">Open</a>
                     </li>
                     <li>
-                        <a class="nav-link bg-dark" href="#">Closed</a>
+                        <a class="nav-link" href="#">Closed</a>
                     </li>
                     <li>
-                        <a class="nav-link bg-dark" href="#">All</a>
+                        <a class="nav-link" href="#">All</a>
                     </li>
                 </ul>
             </div>
@@ -63,7 +58,7 @@
                       <li class="page-item disabled">
                         <a class="page-link" href="#" tabindex="-1">Prev</a>
                       </li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link page-link-active" href="#">1</a></li>
                       <li class="page-item"><a class="page-link" href="#">2</a></li>
                       <li class="page-item"><a class="page-link" href="#">3</a></li>
                       <li class="page-item">
@@ -74,68 +69,64 @@
             </div>
         </div>
 
-        <div class="row row-cols-4 g-2" style="width:99.9%">
+        <div class="row row-cols-4 g-2 card-outer-wrapper">
             <div class="col">
                 <div class="card">
                   <div class="card-body">
                     <div class="row d-flex justify-content-between m-2">
                         <div class="col-2 justify-content-center">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i>
-                            <p style="margin-left: -15px; font-size: 13px; color: blue;" class="row">CLASS II</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p1">CLASS II</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i> 
-                            <p style="margin-left: -20px;font-size: 13px; color: blue;" class="row">REMOVAL</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p2">REMOVAL</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-calendar3" style=" width: 15px; height: 15px;"></i>  
-                            <p style="margin-left: 5px;font-size: 13px; color: blue;">0</p>
+                            <i class="bi bi-calendar3"></i>
+                            <p class="row card-body-p3">0</p>
                         </div>
                     </div>
                     <div class="row">  
-                            <h5 class="col" style="color: grey;font-size: 12px; margin-left: 5px; font-weight: bold;">
-                                    RECALL ID</h5>
-                            <h5 class="col" style="color: rgb(40, 86, 249); font-size: 12px; margin-left: -220px; font-weight: bold;">
-                                    Tues-test-4</h5>     
+                            <h5 class="col card-recall-id">RECALL ID</h5>
+                            <h5 class="col card-recall-value">Tues-test-4</h5>     
                     </div>
-                    <div style="background-color: rgb(239, 239, 239); height: 70px;">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 17px; padding: 10px;" class="card-title">Tues-test-4</h5>
+                    <div class="card-recall-container">
+                        <h5 class="card-title card-recall-title">Tues-test-4</h5>
                     </div>
-                        <h5 style="color: grey;font-size: 13PX; margin-top: 5px; font-weight: bold;">PROGRESS INDICATOR</h5>
+                        <h5 class="card-progress-title">PROGRESS INDICATOR</h5>
                     <div class="col text-center">
-                        <h5 style="color:rgb(16, 62, 228); font-size: 25px;">100%</h5>
+                        <h5 class="card-progress-percent">100%</h5>
                     </div>
-                    <div class="progress" style="height: 10px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
-                                    style="width:100%; background-color:rgb(25, 68, 222)">
-                        </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <div class="row" style="margin-top: 10px;">
-                        <div class="col text-left" >
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">NOT ACKNOWLEDGED</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                    <div class="row mt-2">
+                        <div class="col text-left">
+                            <h5 class="card-progress-title">NOT ACKNOWLEDGED</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> ACKNOWLEDGED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">ACKNOWLEDGED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
                     <div class="row">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> COMPLETED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title"> COMPLETED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">IN PROGRESS</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                            <h5 class="card-progress-title">IN PROGRESS</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">TOTAL</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">TOTAL</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
-                    <div style="float: right;">
-                        <button class="btn btn-primary text-center" style="border-radius: 3cm; font-size: small;">View</button>
+                    <div class="float-right">
+                        <button class="btn btn-primary text-center view-btn">View</button>
                     </div>
                   </div>
                 </div>
@@ -145,62 +136,58 @@
                   <div class="card-body">
                     <div class="row d-flex justify-content-between m-2">
                         <div class="col-2 justify-content-center">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i>
-                            <p style="margin-left: -15px; font-size: 13px; color: blue;" class="row">CLASS II</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p1">CLASS II</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i> 
-                            <p style="margin-left: -20px;font-size: 13px; color: blue;" class="row">REMOVAL</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p2">REMOVAL</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-calendar3" style=" width: 15px; height: 15px;"></i>  
-                            <p style="margin-left: 5px;font-size: 13px; color: blue;">0</p>
+                            <i class="bi bi-calendar3"></i>
+                            <p class="row card-body-p3">0</p>
                         </div>
                     </div>
                     <div class="row">  
-                            <h5 class="col" style="color: grey;font-size: 12px; margin-left: 5px; font-weight: bold;">
-                                    RECALL ID</h5>
-                            <h5 class="col" style="color: rgb(40, 86, 249); font-size: 12px; margin-left: -220px; font-weight: bold;">
-                                    Tues-test-4</h5>     
+                            <h5 class="col card-recall-id">RECALL ID</h5>
+                            <h5 class="col card-recall-value">Tues-test-4</h5>     
                     </div>
-                    <div style="background-color: rgb(239, 239, 239); height: 70px;">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 17px; padding: 10px;" class="card-title">Tues-test-4</h5>
+                    <div class="card-recall-container">
+                        <h5 class="card-title card-recall-title">Tues-test-4</h5>
                     </div>
-                        <h5 style="color: grey;font-size: 13PX; margin-top: 5px; font-weight: bold;">PROGRESS INDICATOR</h5>
+                        <h5 class="card-progress-title">PROGRESS INDICATOR</h5>
                     <div class="col text-center">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 25px;">100%</h5>
+                        <h5 class="card-progress-percent">100%</h5>
                     </div>
-                    <div class="progress" style="height: 10px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
-                                    style="width:100%; background-color:rgb(25, 68, 222)">
-                        </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <div class="row" style="margin-top: 10px;">
-                        <div class="col text-left" >
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">NOT ACKNOWLEDGED</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                    <div class="row mt-2">
+                        <div class="col text-left">
+                            <h5 class="card-progress-title">NOT ACKNOWLEDGED</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> ACKNOWLEDGED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">ACKNOWLEDGED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
                     <div class="row">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> COMPLETED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title"> COMPLETED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">IN PROGRESS</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                            <h5 class="card-progress-title">IN PROGRESS</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">TOTAL</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">TOTAL</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
-                    <div style="float: right;">
-                        <button class="btn btn-primary text-center" style="border-radius: 3cm; font-size: small;">View</button>
+                    <div class="float-right">
+                        <button class="btn btn-primary text-center view-btn">View</button>
                     </div>
                   </div>
                 </div>
@@ -210,62 +197,58 @@
                   <div class="card-body">
                     <div class="row d-flex justify-content-between m-2">
                         <div class="col-2 justify-content-center">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i>
-                            <p style="margin-left: -15px; font-size: 13px; color: blue;" class="row">CLASS II</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p1">CLASS II</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i> 
-                            <p style="margin-left: -20px;font-size: 13px; color: blue;" class="row">REMOVAL</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p2">REMOVAL</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-calendar3" style=" width: 15px; height: 15px;"></i>  
-                            <p style="margin-left: 5px;font-size: 13px; color: blue;">0</p>
+                            <i class="bi bi-calendar3"></i>
+                            <p class="row card-body-p3">0</p>
                         </div>
                     </div>
                     <div class="row">  
-                            <h5 class="col" style="color: grey;font-size: 12px; margin-left: 5px; font-weight: bold;">
-                                    RECALL ID</h5>
-                            <h5 class="col" style="color: rgb(40, 86, 249); font-size: 12px; margin-left: -220px; font-weight: bold;">
-                                    Tues-test-4</h5>     
+                            <h5 class="col card-recall-id">RECALL ID</h5>
+                            <h5 class="col card-recall-value">Tues-test-4</h5>     
                     </div>
-                    <div style="background-color: rgb(239, 239, 239); height: 70px;">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 17px; padding: 10px;" class="card-title">Tues-test-4</h5>
+                    <div class="card-recall-container">
+                        <h5 class="card-title card-recall-title">Tues-test-4</h5>
                     </div>
-                        <h5 style="color: grey;font-size: 13PX; margin-top: 5px; font-weight: bold;">PROGRESS INDICATOR</h5>
+                        <h5 class="card-progress-title">PROGRESS INDICATOR</h5>
                     <div class="col text-center">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 25px;">100%</h5>
+                        <h5 class="card-progress-percent">100%</h5>
                     </div>
-                    <div class="progress" style="height: 10px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
-                                    style="width:100%; background-color:rgb(25, 68, 222)">
-                        </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <div class="row" style="margin-top: 10px;">
-                        <div class="col text-left" >
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">NOT ACKNOWLEDGED</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                    <div class="row mt-2">
+                        <div class="col text-left">
+                            <h5 class="card-progress-title">NOT ACKNOWLEDGED</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> ACKNOWLEDGED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">ACKNOWLEDGED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
                     <div class="row">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> COMPLETED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title"> COMPLETED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">IN PROGRESS</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                            <h5 class="card-progress-title">IN PROGRESS</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">TOTAL</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">TOTAL</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
-                    <div style="float: right;">
-                        <button class="btn btn-primary text-center" style="border-radius: 3cm; font-size: small;">View</button>
+                    <div class="float-right">
+                        <button class="btn btn-primary text-center view-btn">View</button>
                     </div>
                   </div>
                 </div>
@@ -275,62 +258,58 @@
                   <div class="card-body">
                     <div class="row d-flex justify-content-between m-2">
                         <div class="col-2 justify-content-center">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i>
-                            <p style="margin-left: -15px; font-size: 13px; color: blue;" class="row">CLASS II</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p1">CLASS II</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i> 
-                            <p style="margin-left: -20px;font-size: 13px; color: blue;" class="row">REMOVAL</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p2">REMOVAL</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-calendar3" style=" width: 15px; height: 15px;"></i>  
-                            <p style="margin-left: 5px;font-size: 13px; color: blue;">0</p>
+                            <i class="bi bi-calendar3"></i>
+                            <p class="row card-body-p3">0</p>
                         </div>
                     </div>
                     <div class="row">  
-                            <h5 class="col" style="color: grey;font-size: 12px; margin-left: 5px; font-weight: bold;">
-                                    RECALL ID</h5>
-                            <h5 class="col" style="color: rgb(40, 86, 249); font-size: 12px; margin-left: -220px; font-weight: bold;">
-                                    Tues-test-4</h5>     
+                            <h5 class="col card-recall-id">RECALL ID</h5>
+                            <h5 class="col card-recall-value">Tues-test-4</h5>     
                     </div>
-                    <div style="background-color: rgb(239, 239, 239); height: 70px;">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 17px; padding: 10px;" class="card-title">Tues-test-4</h5>
+                    <div class="card-recall-container">
+                        <h5 class="card-title card-recall-title">Tues-test-4</h5>
                     </div>
-                        <h5 style="color: grey;font-size: 13PX; margin-top: 5px; font-weight: bold;">PROGRESS INDICATOR</h5>
+                        <h5 class="card-progress-title">PROGRESS INDICATOR</h5>
                     <div class="col text-center">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 25px;">100%</h5>
+                        <h5 class="card-progress-percent">100%</h5>
                     </div>
-                    <div class="progress" style="height: 10px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
-                                    style="width:100%; background-color:rgb(25, 68, 222)">
-                        </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <div class="row" style="margin-top: 10px;">
-                        <div class="col text-left" >
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">NOT ACKNOWLEDGED</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                    <div class="row mt-2">
+                        <div class="col text-left">
+                            <h5 class="card-progress-title">NOT ACKNOWLEDGED</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> ACKNOWLEDGED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">ACKNOWLEDGED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
                     <div class="row">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> COMPLETED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title"> COMPLETED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">IN PROGRESS</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                            <h5 class="card-progress-title">IN PROGRESS</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">TOTAL</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">TOTAL</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
-                    <div style="float: right;">
-                        <button class="btn btn-primary text-center" style="border-radius: 3cm; font-size: small;">View</button>
+                    <div class="float-right">
+                        <button class="btn btn-primary text-center view-btn">View</button>
                     </div>
                   </div>
                 </div>
@@ -342,62 +321,58 @@
                   <div class="card-body">
                     <div class="row d-flex justify-content-between m-2">
                         <div class="col-2 justify-content-center">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i>
-                            <p style="margin-left: -15px; font-size: 13px; color: blue;" class="row">CLASS II</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p1">CLASS II</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i> 
-                            <p style="margin-left: -20px;font-size: 13px; color: blue;" class="row">REMOVAL</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p2">REMOVAL</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-calendar3" style=" width: 15px; height: 15px;"></i>  
-                            <p style="margin-left: 5px;font-size: 13px; color: blue;">0</p>
+                            <i class="bi bi-calendar3"></i>
+                            <p class="row card-body-p3">0</p>
                         </div>
                     </div>
                     <div class="row">  
-                            <h5 class="col" style="color: grey;font-size: 12px; margin-left: 5px; font-weight: bold;">
-                                    RECALL ID</h5>
-                            <h5 class="col" style="color: rgb(40, 86, 249); font-size: 12px; margin-left: -220px; font-weight: bold;">
-                                    Tues-test-4</h5>     
+                            <h5 class="col card-recall-id">RECALL ID</h5>
+                            <h5 class="col card-recall-value">Tues-test-4</h5>     
                     </div>
-                    <div style="background-color: rgb(239, 239, 239); height: 70px;">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 17px; padding: 10px;" class="card-title">Tues-test-4</h5>
+                    <div class="card-recall-container">
+                        <h5 class="card-title card-recall-title">Tues-test-4</h5>
                     </div>
-                        <h5 style="color: grey;font-size: 13PX; margin-top: 5px; font-weight: bold;">PROGRESS INDICATOR</h5>
+                        <h5 class="card-progress-title">PROGRESS INDICATOR</h5>
                     <div class="col text-center">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 25px;">100%</h5>
+                        <h5 class="card-progress-percent">100%</h5>
                     </div>
-                    <div class="progress" style="height: 10px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
-                                    style="width:100%; background-color:rgb(25, 68, 222)">
-                        </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <div class="row" style="margin-top: 10px;">
-                        <div class="col text-left" >
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">NOT ACKNOWLEDGED</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                    <div class="row mt-2">
+                        <div class="col text-left">
+                            <h5 class="card-progress-title">NOT ACKNOWLEDGED</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> ACKNOWLEDGED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">ACKNOWLEDGED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
                     <div class="row">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> COMPLETED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title"> COMPLETED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">IN PROGRESS</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                            <h5 class="card-progress-title">IN PROGRESS</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">TOTAL</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">TOTAL</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
-                    <div style="float: right;">
-                        <button class="btn btn-primary text-center" style="border-radius: 3cm; font-size: small;">View</button>
+                    <div class="float-right">
+                        <button class="btn btn-primary text-center view-btn">View</button>
                     </div>
                   </div>
                 </div>
@@ -407,62 +382,58 @@
                   <div class="card-body">
                     <div class="row d-flex justify-content-between m-2">
                         <div class="col-2 justify-content-center">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i>
-                            <p style="margin-left: -15px; font-size: 13px; color: blue;" class="row">CLASS II</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p1">CLASS II</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i> 
-                            <p style="margin-left: -20px;font-size: 13px; color: blue;" class="row">REMOVAL</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p2">REMOVAL</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-calendar3" style=" width: 15px; height: 15px;"></i>  
-                            <p style="margin-left: 5px;font-size: 13px; color: blue;">0</p>
+                            <i class="bi bi-calendar3"></i>
+                            <p class="row card-body-p3">0</p>
                         </div>
                     </div>
                     <div class="row">  
-                            <h5 class="col" style="color: grey;font-size: 12px; margin-left: 5px; font-weight: bold;">
-                                    RECALL ID</h5>
-                            <h5 class="col" style="color: rgb(40, 86, 249); font-size: 12px; margin-left: -220px; font-weight: bold;">
-                                    Tues-test-4</h5>     
+                            <h5 class="col card-recall-id">RECALL ID</h5>
+                            <h5 class="col card-recall-value">Tues-test-4</h5>     
                     </div>
-                    <div style="background-color: rgb(239, 239, 239); height: 70px;">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 17px; padding: 10px;" class="card-title">Tues-test-4</h5>
+                    <div class="card-recall-container">
+                        <h5 class="card-title card-recall-title">Tues-test-4</h5>
                     </div>
-                        <h5 style="color: grey;font-size: 13PX; margin-top: 5px; font-weight: bold;">PROGRESS INDICATOR</h5>
+                        <h5 class="card-progress-title">PROGRESS INDICATOR</h5>
                     <div class="col text-center">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 25px;">100%</h5>
+                        <h5 class="card-progress-percent">100%</h5>
                     </div>
-                    <div class="progress" style="height: 10px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
-                                    style="width:100%; background-color:rgb(25, 68, 222)">
-                        </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <div class="row" style="margin-top: 10px;">
-                        <div class="col text-left" >
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">NOT ACKNOWLEDGED</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                    <div class="row mt-2">
+                        <div class="col text-left">
+                            <h5 class="card-progress-title">NOT ACKNOWLEDGED</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> ACKNOWLEDGED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">ACKNOWLEDGED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
                     <div class="row">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> COMPLETED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title"> COMPLETED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">IN PROGRESS</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                            <h5 class="card-progress-title">IN PROGRESS</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">TOTAL</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">TOTAL</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
-                    <div style="float: right;">
-                        <button class="btn btn-primary text-center" style="border-radius: 3cm; font-size: small;">View</button>
+                    <div class="float-right">
+                        <button class="btn btn-primary text-center view-btn">View</button>
                     </div>
                   </div>
                 </div>
@@ -472,62 +443,58 @@
                   <div class="card-body">
                     <div class="row d-flex justify-content-between m-2">
                         <div class="col-2 justify-content-center">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i>
-                            <p style="margin-left: -15px; font-size: 13px; color: blue;" class="row">CLASS II</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p1">CLASS II</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i> 
-                            <p style="margin-left: -20px;font-size: 13px; color: blue;" class="row">REMOVAL</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p2">REMOVAL</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-calendar3" style=" width: 15px; height: 15px;"></i>  
-                            <p style="margin-left: 5px;font-size: 13px; color: blue;">0</p>
+                            <i class="bi bi-calendar3"></i>
+                            <p class="row card-body-p3">0</p>
                         </div>
                     </div>
                     <div class="row">  
-                            <h5 class="col" style="color: grey;font-size: 12px; margin-left: 5px; font-weight: bold;">
-                                    RECALL ID</h5>
-                            <h5 class="col" style="color: rgb(40, 86, 249); font-size: 12px; margin-left: -220px; font-weight: bold;">
-                                    Tues-test-4</h5>     
+                            <h5 class="col card-recall-id">RECALL ID</h5>
+                            <h5 class="col card-recall-value">Tues-test-4</h5>     
                     </div>
-                    <div style="background-color: rgb(239, 239, 239); height: 70px;">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 17px; padding: 10px;" class="card-title">Tues-test-4</h5>
+                    <div class="card-recall-container">
+                        <h5 class="card-title card-recall-title">Tues-test-4</h5>
                     </div>
-                        <h5 style="color: grey;font-size: 13PX; margin-top: 5px; font-weight: bold;">PROGRESS INDICATOR</h5>
+                        <h5 class="card-progress-title">PROGRESS INDICATOR</h5>
                     <div class="col text-center">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 25px;">100%</h5>
+                        <h5 class="card-progress-percent">100%</h5>
                     </div>
-                    <div class="progress" style="height: 10px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
-                                    style="width:100%; background-color:rgb(25, 68, 222)">
-                        </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <div class="row" style="margin-top: 10px;">
-                        <div class="col text-left" >
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">NOT ACKNOWLEDGED</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                    <div class="row mt-2">
+                        <div class="col text-left">
+                            <h5 class="card-progress-title">NOT ACKNOWLEDGED</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> ACKNOWLEDGED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">ACKNOWLEDGED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
                     <div class="row">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> COMPLETED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title"> COMPLETED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">IN PROGRESS</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                            <h5 class="card-progress-title">IN PROGRESS</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">TOTAL</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">TOTAL</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
-                    <div style="float: right;">
-                        <button class="btn btn-primary text-center" style="border-radius: 3cm; font-size: small;">View</button>
+                    <div class="float-right">
+                        <button class="btn btn-primary text-center view-btn">View</button>
                     </div>
                   </div>
                 </div>
@@ -537,62 +504,58 @@
                   <div class="card-body">
                     <div class="row d-flex justify-content-between m-2">
                         <div class="col-2 justify-content-center">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i>
-                            <p style="margin-left: -15px; font-size: 13px; color: blue;" class="row">CLASS II</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p1">CLASS II</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-box" style=" width: 15px; height: 15px;"></i> 
-                            <p style="margin-left: -20px;font-size: 13px; color: blue;" class="row">REMOVAL</p>
+                            <i class="bi bi-box"></i>
+                            <p class="row card-body-p2">REMOVAL</p>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-calendar3" style=" width: 15px; height: 15px;"></i>  
-                            <p style="margin-left: 5px;font-size: 13px; color: blue;">0</p>
+                            <i class="bi bi-calendar3"></i>
+                            <p class="row card-body-p3">0</p>
                         </div>
                     </div>
                     <div class="row">  
-                            <h5 class="col" style="color: grey;font-size: 12px; margin-left: 5px; font-weight: bold;">
-                                    RECALL ID</h5>
-                            <h5 class="col" style="color: rgb(40, 86, 249); font-size: 12px; margin-left: -220px; font-weight: bold;">
-                                    Tues-test-4</h5>     
+                            <h5 class="col card-recall-id">RECALL ID</h5>
+                            <h5 class="col card-recall-value">Tues-test-4</h5>     
                     </div>
-                    <div style="background-color: rgb(239, 239, 239); height: 70px;">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 17px; padding: 10px;" class="card-title">Tues-test-4</h5>
+                    <div class="card-recall-container">
+                        <h5 class="card-title card-recall-title">Tues-test-4</h5>
                     </div>
-                        <h5 style="color: grey;font-size: 13PX; margin-top: 5px; font-weight: bold;">PROGRESS INDICATOR</h5>
+                        <h5 class="card-progress-title">PROGRESS INDICATOR</h5>
                     <div class="col text-center">
-                        <h5 style="color:rgb(40, 86, 249); font-size: 25px;">100%</h5>
+                        <h5 class="card-progress-percent">100%</h5>
                     </div>
-                    <div class="progress" style="height: 10px;">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" 
-                                    style="width:100%; background-color:rgb(25, 68, 222)">
-                        </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <div class="row" style="margin-top: 10px;">
-                        <div class="col text-left" >
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">NOT ACKNOWLEDGED</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                    <div class="row mt-2">
+                        <div class="col text-left">
+                            <h5 class="card-progress-title">NOT ACKNOWLEDGED</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> ACKNOWLEDGED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">ACKNOWLEDGED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
                     <div class="row">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;"> COMPLETED</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title"> COMPLETED</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">IN PROGRESS</h5>
-                            <h5 style="color: green; font-size: 25px;">0</h5>
+                            <h5 class="card-progress-title">IN PROGRESS</h5>
+                            <h5 class="not-ack">0</h5>
                         </div class="col">
                         <div class="col text-left">
-                            <h5 style="color: grey;font-size: 10px; font-weight: bold;">TOTAL</h5>
-                            <h5 style="color: grey; font-size: 25px;">1</h5>
+                            <h5 class="card-progress-title">TOTAL</h5>
+                            <h5 class="ack">1</h5>
                         </div class="col">
                     </div>
-                    <div style="float: right;">
-                        <button class="btn btn-primary text-center" style="border-radius: 3cm; font-size: small;">View</button>
+                    <div class="float-right">
+                        <button class="btn btn-primary text-center view-btn">View</button>
                     </div>
                   </div>
                 </div>

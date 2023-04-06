@@ -1,5 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+:root {
+    --bg-blue-secondary: #409def; 
+    --card-blue-text: rgb(30, 93, 180);
+    --card-progress-blue: rgb(28, 64, 196);
+}
 .content {
     font-family: 'Poppins', sans-serif;
     margin-left: 0px;
@@ -68,6 +73,7 @@
 .home-bar img {
     float: right;
     padding-inline: 5px;
+    width: 50; height: 30px;
 }
 nav {
     width: 100%;
@@ -77,7 +83,12 @@ nav {
     justify-content: space-between;
 }
 .nav-link {
+    color: white !important;
+    background-color: rgba(109, 109, 109, 0.874) !important;
+}
+.nav-link-active {
     color: white;
+    background-color: var(--bg-blue-secondary) !important;
 }
 .nav li {
     padding-right: 4px;
@@ -95,6 +106,80 @@ nav ul li{
 .page-item {
     padding-inline: 1px;
 }
+.page-link-active {
+    color: white !important;
+    background-color: var(--bg-blue-secondary) !important;
+}
 .page-link {
     border-radius: 3px;
+}
+.card-outer-wrapper {
+    width: 99.9%;
+}
+.card-body i {
+    width: 15px; height: 15px;
+}
+.card-body p {
+    font-size: 13px; 
+    color: blue;
+}
+.card-body-p1 {
+    margin-left: -15px !important; 
+}
+.card-body-p2 {
+    margin-left: -20px !important;
+}
+.card-body-p3 {
+    margin-left: 5px !important;
+}
+.card-recall-id {
+    color: grey; 
+    font-size: 12px; 
+    margin-left: 5px; 
+    font-weight: bold;
+}
+.card-recall-value {
+    color: rgb(40, 86, 249); 
+    font-size: 12px; 
+    margin-left: -220px; 
+    font-weight: bold;
+}
+.card-recall-container {
+    background-color: rgb(239, 239, 239); 
+    height: 70px;
+}
+.card-recall-title {
+    color:rgb(40, 86, 249); font-size: 17px; padding: 10px;
+}
+.card-progress-title {
+    color: grey;
+    font-size: 13PX; 
+    font-weight: bold;
+}
+.card-progress-percent {
+    color:var(--card-progress-blue); 
+    font-size: 25px;
+}
+.progress {
+    height: 10px !important;
+}
+.progress-bar {
+    width: 100%; 
+    background-color:var(--card-progress-blue) !important;
+}
+.not-ack {
+    color: green; 
+    font-size: 25px;
+}
+.ack {
+    color: grey; 
+    font-size: 25px;
+}
+.float-right {
+    float: right;
+}
+.view-btn {
+    border-radius: 3cm !important; 
+    font-size: small !important;
+    background-color: var(--bg-blue-secondary) !important;
 }
