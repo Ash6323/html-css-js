@@ -240,10 +240,13 @@ a.article:hover {
     padding-left: 0px;
     min-height: 100vh;
     transition: all 0.3s;
+    background-color: #c1d4de38;
+    box-shadow: -1px 0px 4px rgba(0, 0, 0, 0.3);
+    margin-left: 1px;
 }
 .content-area {
+    margin-left: 10px;
     height: 97%;
-    background-color: #c1d4de38;
 }
 
 /* ---------------------------------------------------
