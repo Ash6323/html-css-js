@@ -153,14 +153,13 @@ a.article:hover {
 /* ---------------------------------------------------
     HEADER STYLE
 ----------------------------------------------------- */
-.search-bar {
+.search-bar {            /*WIDTH CHECK*/
 	width: 120%;
 	position: relative;
     vertical-align: middle;
 	height: 60px;
 	top: 3%;
 	transform: translateY(-50%);
-
     margin-left: 10px;
 }
 .search {
@@ -248,7 +247,28 @@ a.article:hover {
     margin-left: 10px;
     height: 97%;
 }
-
+.content-area i {
+    font-size: 30px;
+}
+.action-button {
+    background-color: #6d7fcc !important; 
+    color: white !important;
+    border-radius: 5px 5px 5px 5px;
+    width: 100px;
+    height: 30px;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 13px !important;
+    font-weight: bold !important;
+    letter-spacing: 1px;
+    float: right;
+    margin-right: 20px;
+}
+.nav-tab-content {
+    background-color: white;
+    padding-top: 40px;
+    margin-left: 16px;
+    margin-right: 20px;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
