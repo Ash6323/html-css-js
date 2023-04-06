@@ -73,39 +73,53 @@
                 <ul style="margin-top: 60px;" class="list-unstyled CTAs">
                     <li>
                         <a href="#" class="powered-by">Powered By<br>
-                                        <span style="font-size: 15px;">INCUBXPERTS</span></a>
+                                        <span style="font-size: 15px; font-weight: bold; letter-spacing: 1px;">INCUBXPERTS</span></a>
                     </li>
                 </ul>
             </nav>
     
             <!-- Page Content  -->
             <div id="content">
-                <div class="search-bar">
-                    <input placeholder="Search for Anything..." class="search" type="text" id="search" />
-                    <input class="search-bar-submit" type="submit" value="Search">
-                    <input class="log-time-button" type="submit" value="Log Time">
-                    <i class="bi bi-bell bell-icon"></i>
-                    <a href="#" data-toggle="collapse" class="dropdown-toggle" >
-                        <img src="./res/img_avatar.png" alt="Avatar" class="avatar">
-                        <span class="user-name">Ashwin Kumar</span> 
-                    </a>                   
+                <div class="search-bar row-cols-3 d-flex justify-content-center">
+                    <div style="flex-basis: 70%;">
+                        <input placeholder="Search for Anything..." class="search" type="text" id="search" />
+                        <input class="search-bar-submit" type="submit" value="Search">
+                    </div>
+                    <div style="flex-basis: 15%;" class="log-time-container">
+                        <input class="log-time-button" type="submit" value="Log Time">
+                        <i class="bi bi-bell bell-icon"></i>
+                    </div>
+                    <div style="flex-basis: 10%;">
+                        <a href="#" class="dropdown-toggle">
+                            <img src="./res/img_avatar.png" alt="Avatar" class="avatar">
+                            <span class="user-name">Ashwin Kumar</span> 
+                        </a>     
+                    </div>                                 
                 </div>
 
                 <div class="content-area">
-                    <div class="row d-flex justify-content-between">
+                    <div class="row d-flex">
+                        <h2>Smith vs Jones</h2>
+                    </div>
+                    <div class="row d-flex justify-content-center">
                         <div class="col">
-                            <div class="row" style="float: left;">
-                                <i class="col bi bi-check"></i>
-                                <h6 class="col" style="font-weight: bold;">Hi</h6>
-                            </div>   
+                            <div class="row justify-content-center " style="float: left; margin-top: -1%;">
+                                <div class="col">
+                                    <i class="bi bi-check"><span style="font-size: small; font-weight: bold;">Hi</span></i>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check"><span style="font-size: small; font-weight: bold;">Hi</span></i>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check"><span style="font-size: small; font-weight: bold;">Hi</span></i>
+                                </div>
+                            </div>
                             <div class="col">
-                                <!-- <input class="toggle-button action-button" type="submit" value="Actions"> -->
                                 <button type="button" class="action-button btn dropdown-toggle">Actions
                                 </button>
                             </div>
                         </div>
                     </div>
-
                     <div class="row d-flex justify-content-between">
                         <ul class="nav nav-tabs" style="margin-left: 15px !important;">
                             <li class="nav-item">
@@ -222,14 +236,15 @@
                                     <div class="col">
                                         <h5 >Matter Alerts</h5>
                                     </div>
-                                    <div class="col" style="float: inline-end">
-                                        <h8 
-                                            style="font-size: small; font-weight: bold; margin-top: 2px; color: #2649d5da;">
+                                    <div class="col">
+                                        <a  href="#"
+                                            style="font-size: small; font-weight: bold; margin-top: 2px; 
+                                            color: #2649d5da; float: right !important; margin-right: 20% !important;">
                                             View All
-                                        </h8>
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="container-fluid" style="background:#ff3243d3; height: 70px; width: 400px; float: left;">
+                                <div class="container-fluid mt-1 warning-container" style="background:#ff3243d3; ">
                                     <div class="row">
                                         <div class="col-2" style="background:#C60012; height: 70px;">
                                             <i class="fas fa-exclamation-triangle fa-2x py-1" style="color: #1C2833;"></i>
@@ -243,7 +258,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="container-fluid mt-3" style="background:#ffd42abd; height: 70px; width: 400px; float: left;">
+                                <div class="container-fluid mt-3 warning-container" style="background:#ffd42abd;">
                                     <div class="row">
                                         <div class="col-2" style="background:#caa200dd; height: 70px;">
                                             <i class="fas fa-exclamation-triangle fa-2x py-1" style="color: #1C2833;"></i>
@@ -257,61 +272,17 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="container-fluid mt-3" style="width: 390px; float: left;">
+                                    <button 
+                                        type="button" class="action-button btn"
+                                        style="margin-right: -7%;">
+                                        Resolve
+                                    </button>
+                                </div>
                             </div>    
                         </div>
                     </div>
-
-                    <h2>Smith vs Jones</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    
-                    <div class="line"></div>
-                    
-                    <h2>Lorem Ipsum Dolor</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-                    <div class="line"></div>
-        
-                    <h2>Lorem Ipsum Dolor</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        
-                    <div class="line"></div>
-        
-                    <h3>Lorem Ipsum Dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
-
-                <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-    
-                        <button type="button" id="sidebarCollapse" class="btn btn-info">
-                            <i class="fas fa-align-left"></i>
-                            <span>Toggle Sidebar</span>
-                        </button>
-                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-align-justify"></i>
-                        </button>
-    
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Page</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav> -->
-    
-                
             </div>
         </div>
 
