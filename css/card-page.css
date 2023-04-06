@@ -75,7 +75,6 @@ nav {
     display: flex;
     margin: 0;
     justify-content: space-between;
-    background-color: var(--primary-color);
 }
 /* .nav-pills {
     width: 80px;
@@ -83,12 +82,22 @@ nav {
 .nav-link {
     color: white;
 }
-nav ul{
-    display: flex;
-    list-style: none;
+.nav li {
+    padding-right: 4px;
 }
 nav ul li{
     padding: 8px 15px;
     border-radius: 10px;
     transition: 0.2s ease-in;
+}
+.page-count-nav {
+    display: flex;
+    float: right;
+    justify-content: space-between;
+}
+.page-item {
+    padding-inline: 1px;
+}
+.page-link {
+    border-radius: 3px;
 }
