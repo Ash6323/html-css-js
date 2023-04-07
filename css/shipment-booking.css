@@ -18,11 +18,15 @@
     border-radius: 4px 4px;
 }
 .field-header {
-    margin-top: 0%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
-input[type=text]
+.field-header h7 {
+    padding: 3%;
+}
+input[type=text], select
 {
-    width: 90%;
+    width: 93%;
     padding: 7px;
     border: 1px solid rgba(168, 166, 166, 0.726);
     border-radius: 4px;
@@ -34,4 +38,19 @@ input[type=text]
     padding-bottom: 1%;
     margin-left: 3%;
     margin-bottom: 3%;
+}
+a {
+    font-size: 14px;
+    padding-left: 3%;
+}
+p {
+    font-size: 14px;
+    padding-top: 2%;
+}
+.incoterms-btn-group {
+    margin-left: 3%;
+    border: 1px solid rgba(168, 166, 166, 0.726);
+}
+.btn-border {
+    border: 1px solid rgba(168, 166, 166, 0.726);
 }

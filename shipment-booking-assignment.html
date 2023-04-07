@@ -6,7 +6,8 @@
         <link rel="icon" href="./res/IX-logo-1.png">
         <title>Book Shipment</title>
         <link rel="stylesheet" href="./css/shipment-booking.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" 
@@ -27,11 +28,11 @@
                     <div class="col">
                         <div class="field-container">
                             <div class="field-header">
-                                <h7 style="padding: 3%;">Booking Name</h7>
+                                <h7>Booking Name</h7>
                             </div>
                             <div>
                                 <input type="text" id="booking-name" name="booking-name" 
-                                        placeholder="Description of Shipment" class="text-input outer-field-padding">
+                                        placeholder="Description of Shipment" class="outer-field-padding">
                             </div>
                         </div>
                     </div>
@@ -44,11 +45,47 @@
                     <div class="col">
                         <div class="field-container">
                             <div class="field-header">
-                                <h7 style="padding: 3%;">Consignee</h7>
+                                <h7>Consignee</h7>
                             </div>
                             <div>
-                                <input type="text" id="booking-name" name="booking-name" 
-                                        placeholder="Description of Shipment" class="text-input outer-field-padding">
+                                <select required name = "consignee-dropdown" class="outer-field-padding">
+                                    <option value= "" disabled selected>Select Consignee</option>
+                                    <option value = "conA">Consignee A</option>
+                                    <option value = "conB">Consignee B</option>
+                                    <option value = "conC">Consignee C</option>
+                                    <option value = "conD">Consignee D</option>
+                                    <option value = "conE">Consignee E</option>
+                                    <option value = "conF">Consignee F</option>
+                                    <option value = "conG">Consignee G</option>
+                                </select>
+                            </div>
+                            <div class="field-header">
+                                <h7>Supplier</h7>
+                            </div>
+                            <div>
+                                <select required name = "supplier-dropdown" class="outer-field-padding">
+                                    <option value= "" disabled selected>Select Supplier</option>
+                                    <option value = "supA">Supplier A</option>
+                                    <option value = "supB">Supplier B</option>
+                                    <option value = "supC">Supplier C</option>
+                                    <option value = "supD">Supplier D</option>
+                                </select>
+                            </div>
+                            <div>
+                                <a href="#"><h9>Create New Supplier</h9></a>
+                            </div>
+                            <div class="field-header">
+                                <h7>Incoterms</h7>
+                            </div>
+                            <div>
+                                <div class="btn-group incoterms-btn-group" role="group" aria-label="incoterms-btn-group">
+                                    <button type="button" class="btn btn-border">EXW</button>
+                                    <button type="button" class="btn btn-border">FOB</button>
+                                    <button type="button" class="btn btn-border">FCA</button>
+                                </div>
+                            </div>
+                            <div>
+                                <p><a href="#">Contact us</a> if you can not find your incoterms</p>
                             </div>
                         </div>
                     </div>
