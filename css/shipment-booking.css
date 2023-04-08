@@ -2,7 +2,7 @@
 @import "https://fonts.googleapis.com/css?family=PT+Sans:400,700";
 
 :root {
-    --button-color: rgb(15, 175, 10);
+    --button-color: rgb(14, 135, 10);
 }
 
 .wrapper {
@@ -15,6 +15,7 @@
     box-shadow: 0px 0px 2px 3px rgba(97, 92, 92, 0.621);
     border-radius: 4px 4px;
     background-color:rgba(128, 128, 128, 0.185);
+    margin-bottom: 3%;
 }
 .field-container {
     background-color: rgb(255, 255, 255);
@@ -94,8 +95,11 @@ p {
     color: white !important;
     border-radius: 4px;
     float: right;
-    width: 8% !important;
+    width: 18% !important;
     margin-right: 1%;
+    margin-top: 2% !important;
+    margin-bottom: 4%;
+    font-size: small !important;
 }
 .shipment-image {
     margin-top: 3% !important;
