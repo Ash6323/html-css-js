@@ -1,6 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 @import "https://fonts.googleapis.com/css?family=PT+Sans:400,700";
 
+:root {
+    --button-color: rgb(15, 175, 10);
+}
+
 .wrapper {
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -16,6 +20,13 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 2px 2px rgba(161, 156, 156, 0.621);
     border-radius: 4px 4px;
+    padding-bottom: 1%;
+}
+.flex-basis-35 {
+    flex-basis: 35% !important;
+}
+.flex-basis-65 {
+    flex-basis: 65% !important;
 }
 .field-header {
     padding-top: 1%;
@@ -31,6 +42,7 @@ input[type=text], select
     border: 1px solid rgba(168, 166, 166, 0.726);
     border-radius: 4px;
     resize: vertical;
+    margin-bottom: 1%;
 }
 .outer-field-padding
 {
@@ -54,3 +66,54 @@ p {
 .btn-border {
     border: 1px solid rgba(168, 166, 166, 0.726);
 }
+.submit-btn {
+    background-color: var(--button-color) !important;
+    color: white !important;
+    border-radius: 4px;
+    float: right;
+    width: 8% !important;
+    margin-right: 1%;
+}
+
+/* The search field */
+#myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* The search field when it gets focus/clicked on */
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    /* display: none; */
+    position: relative;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
