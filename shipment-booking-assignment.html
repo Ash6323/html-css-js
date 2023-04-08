@@ -52,27 +52,27 @@
                                 <h7>Consignee</h7>
                             </div>
                             <div>
-                                <select required name = "consignee-dropdown" class="outer-field-padding">
+                                <select required id = "consignee-dropdown" class="outer-field-padding">
                                     <option value= "" disabled selected>Select Consignee</option>
-                                    <option value = "conA">Consignee A</option>
-                                    <option value = "conB">Consignee B</option>
-                                    <option value = "conC">Consignee C</option>
-                                    <option value = "conD">Consignee D</option>
-                                    <option value = "conE">Consignee E</option>
-                                    <option value = "conF">Consignee F</option>
-                                    <option value = "conG">Consignee G</option>
+                                    <option value = "Consignee A">Consignee A</option>
+                                    <option value = "Consignee B">Consignee B</option>
+                                    <option value = "Consignee C">Consignee C</option>
+                                    <option value = "Consignee D">Consignee D</option>
+                                    <option value = "Consignee E">Consignee E</option>
+                                    <option value = "Consignee F">Consignee F</option>
+                                    <option value = "Consignee G">Consignee G</option>
                                 </select>
                             </div>
                             <div class="field-header">
                                 <h7>Supplier</h7>
                             </div>
                             <div>
-                                <select required name = "supplier-dropdown" class="outer-field-padding">
+                                <select required id = "supplier-dropdown" class="outer-field-padding">
                                     <option value= "" disabled selected>Select Supplier</option>
-                                    <option value = "supA">Supplier A</option>
-                                    <option value = "supB">Supplier B</option>
-                                    <option value = "supC">Supplier C</option>
-                                    <option value = "supD">Supplier D</option>
+                                    <option value = "Supplier A">Supplier A</option>
+                                    <option value = "Supplier B">Supplier B</option>
+                                    <option value = "Supplier C">Supplier C</option>
+                                    <option value = "Supplier D">Supplier D</option>
                                 </select>
                             </div>
                             <div>
@@ -395,8 +395,48 @@
                 </div>
 
                 <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7>Hazardous Materials</h7>
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="field-header">
+                                <h7>Do any of your products contain the following?</h7>
+                            </div>
+                            <div class="row d-flex">
+                                <div class="form-check checkboxes">
+                                    <input class="form-check-input" type="checkbox" value="" id="battery-check">
+                                    <label class="form-check-label" for="battery-check">
+                                        Batteries
+                                    </label>
+                                </div>
+                                <div class="form-check checkboxes">
+                                    <input class="form-check-input" type="checkbox" value="" id="hazardous-check">
+                                    <label class="form-check-label" for="hazardous-check">
+                                        Hazardous Materials
+                                    </label>
+                                </div>
+                                <div class="form-check checkboxes">
+                                    <input class="form-check-input" type="checkbox" value="" id="creams-check">
+                                    <label class="form-check-label" for="creams-check">
+                                        Creams, Liquids, Powders
+                                    </label>
+                                </div>
+                                <div class="form-check checkboxes">
+                                    <input class="form-check-input" type="checkbox" value="" id="none-check">
+                                    <label class="form-check-label" for="none-check">
+                                        None of the Above
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
                 <div  class="row d-flex justify-content-end">
-                    <button type="button" class="btn submit-btn">Submit</button>
+                    <button type="button" class="btn submit-btn" onclick="getFormValues()">Submit</button>
                 </div>
             </div>
         </div>
