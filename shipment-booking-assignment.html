@@ -88,13 +88,13 @@
                                     <button type="button" class="btn btn-border">FCA</button>
                                 </div> -->
                                 <section class="btn-group incoterms-btn-group">
-                                    <input type="radio" class="btn-check" name="btnradio" id="radio1">
+                                    <input type="radio" class="btn-check" name="btnradio" id="radio1" value="EXW">
                                     <label class="btn btn-outline-secondary" for="radio1">EXW</label>
                                     
-                                    <input type="radio" class="btn-check" name="btnradio" id="radio2">
+                                    <input type="radio" class="btn-check" name="btnradio" id="radio2" value="FOB">
                                     <label class="btn btn-outline-secondary" for="radio2">FOB</label>
                                     
-                                    <input type="radio" class="btn-check" name="btnradio" id="radio3">
+                                    <input type="radio" class="btn-check" name="btnradio" id="radio3" value="FCA">
                                     <label class="btn btn-outline-secondary" for="radio3">FCA</label>
                                 </section>
                             </div>
@@ -137,19 +137,18 @@
                                                     <h7>Total Weight</h7>
                                                 </div>
                                                 <div>
-                                                    <input type="text" id="total-weight" name="total-weight" 
-                                                            placeholder="kg" class="outer-field-padding">
+                                                    <input type="text" id="ltc-total-weight" placeholder="kg" class="outer-field-padding">
                                                 </div>
                                                 <div class="field-header">
                                                     <h7>Package Type</h7>
                                                 </div>
                                                 <div>
-                                                    <select required name = "package-dropdown" class="outer-field-padding">
+                                                    <select required id = "package-dropdown" class="outer-field-padding">
                                                         <option value= "" disabled selected>Select Package Type</option>
-                                                        <option value = "pkg-A">Package Type 1</option>
-                                                        <option value = "pkg-B">Package Type 2</option>
-                                                        <option value = "pkg-C">Package Type 3</option>
-                                                        <option value = "pkg-D">Package Type 4</option>
+                                                        <option value = "Package Type 1">Package Type 1</option>
+                                                        <option value = "Package Type 2">Package Type 2</option>
+                                                        <option value = "Package Type 3">Package Type 3</option>
+                                                        <option value = "Package Type 4">Package Type 4</option>
                                                     </select>
                                                 </div>
                                             </div> 
@@ -158,14 +157,13 @@
                                                     <h7>Total Volume</h7>
                                                 </div>
                                                 <div>
-                                                    <input type="text" id="total-vol" name="total-vol" 
-                                                            placeholder="cbm" class="outer-field-padding">
+                                                    <input type="text" id="ltc-total-volume" placeholder="cbm" class="outer-field-padding">
                                                 </div>
                                                 <div class="field-header">
                                                     <h7>Total Quantity</h7>
                                                 </div>
                                                 <div>
-                                                    <input type="text" id="total-qty" name="total-qty" class="outer-field-padding">
+                                                    <input type="text" id="total-qty" name="ltc-total-qty" class="outer-field-padding">
                                                 </div>
                                             </div>   
                                         </div>
@@ -184,19 +182,18 @@
                                                     <h7>Total Weight</h7>
                                                 </div>
                                                 <div>
-                                                    <input type="text" id="total-weight-2" name="total-weight-2" 
-                                                            placeholder="kg" class="outer-field-padding">
+                                                    <input type="text" id="fc-total-weight" placeholder="kg" class="outer-field-padding">
                                                 </div>
                                                 <div class="field-header">
                                                     <h7>Package Type</h7>
                                                 </div>
                                                 <div>
-                                                    <select required name = "package-dropdown-2" class="outer-field-padding">
+                                                    <select required id = "fc-package-dropdown" class="outer-field-padding">
                                                         <option value= "" disabled selected>Select Package Type</option>
-                                                        <option value = "pkg-A">Package Type 1</option>
-                                                        <option value = "pkg-B">Package Type 2</option>
-                                                        <option value = "pkg-C">Package Type 3</option>
-                                                        <option value = "pkg-D">Package Type 4</option>
+                                                        <option value = "Package Type 1">Package Type 1</option>
+                                                        <option value = "Package Type 2">Package Type 2</option>
+                                                        <option value = "Package Type 3">Package Type 3</option>
+                                                        <option value = "Package Type 4">Package Type 4</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -205,26 +202,25 @@
                                                     <h7>Container Type</h7>
                                                 </div>
                                                 <div>
-                                                    <select required name = "container-type-dropdown" class="container-type-dropdown">
+                                                    <select required id = "container-type-dropdown" class="container-type-dropdown">
                                                         <option value= "" disabled selected>Select Container Type</option>
-                                                        <option value = "cont-A">40 ft</option>
-                                                        <option value = "cont-B">60 ft</option>
-                                                        <option value = "cont-C">80 ft</option>
-                                                        <option value = "cont-D">100 ft</option>
+                                                        <option value = "40 ft">40 ft</option>
+                                                        <option value = "60 ft">60 ft</option>
+                                                        <option value = "80 ft">80 ft</option>
+                                                        <option value = "100 ft">100 ft</option>
                                                     </select>
                                                 </div>
                                                 <div class="field-header">
                                                     <h7>Total Volume</h7>
                                                 </div>
                                                 <div>
-                                                    <input type="text" id="total-vol-2" name="total-vol-2" 
-                                                            placeholder="cbm" class="outer-field-padding">
+                                                    <input type="text" id="fc-total-vol" placeholder="cbm" class="outer-field-padding">
                                                 </div>
                                                 <div class="field-header">
                                                     <h7>Total Quantity</h7>
                                                 </div>
                                                 <div>
-                                                    <input type="text" id="total-qty-2" name="total-qty-2" class="outer-field-padding">
+                                                    <input type="text" id="fc-total-qty" class="outer-field-padding">
                                                 </div>
                                             </div>
                                         </div>
@@ -248,14 +244,14 @@
                             <div class="dropdown">
                                 <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
                                     <div id="myDropdown" class="dropdown-content">
-                                        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                                        <a href="#about">About</a>
-                                        <a href="#base">Base</a>
-                                        <a href="#blog">Blog</a>
-                                        <a href="#contact">Contact</a>
-                                        <a href="#custom">Custom</a>
-                                        <a href="#support">Support</a>
-                                        <a href="#tools">Tools</a>
+                                        <input type="text" placeholder="Search.." id="origin-address" onkeyup="filterFunction()">
+                                        <a href="#Pune">Pune</a>
+                                        <a href="#Mumbai">Mumbai</a>
+                                        <a href="#New Delhi">New Delhi</a>
+                                        <a href="#Chennai">Chennai</a>
+                                        <a href="#Bangalore">Bangalore</a>
+                                        <a href="#Vizag">Vizag</a>
+                                        <a href="#Surat">Surat</a>
                                     </div>
                             </div>
                             <div>
@@ -277,15 +273,14 @@
                                 <h7>Port</h7>
                             </div>
                             <div>
-                                <select required name = "port-dropdown" class="outer-field-padding">
-                                        <option value= "" disabled selected>Select Port</option>
-                                        <option value = "portA">Port A</option>
-                                        <option value = "portB">Port B</option>
-                                        <option value = "portC">Port C</option>
-                                        <option value = "portD">Port D</option>
-                                    </select>
-                                </div>
-                            
+                                <select required id = "port-dropdown" class="outer-field-padding">
+                                    <option value= "" disabled selected>Select Port</option>
+                                    <option value = "Port A">Port A</option>
+                                    <option value = "Port B">Port B</option>
+                                    <option value = "Port C">Port C</option>
+                                    <option value = "Port D">Port D</option>
+                                </select>
+                            </div>    
                         </div>
                     </div>
                 </div>
@@ -309,9 +304,9 @@
                                 <h7>Will you need Flexport Origin Trucking Services?</h7>
                             </div>
                             <section class="btn-group incoterms-btn-group">
-                                <input type="radio" class="btn-check" name="btnradio" id="radio-yes">
+                                <input type="radio" class="btn-check" name="flexport-radio" id="radio-yes" value = "Yes">
                                 <label class="btn btn-outline-secondary" for="radio-yes">Yes</label>                    
-                                <input type="radio" class="btn-check" name="btnradio" id="radio-no">
+                                <input type="radio" class="btn-check" name="flexport-radio" id="radio-no" value = "No">
                                 <label class="btn btn-outline-secondary" for="radio-no">No</label>
                             </section>
                         </div>
@@ -336,12 +331,12 @@
                                 <h7>Destination Address</h7>
                             </div>
                             <div>
-                                <select required name = "port-dropdown" class="outer-field-padding">
+                                <select required id = "destination-address-dropdown" class="outer-field-padding">
                                         <option value= "" disabled selected>Search for Destination Address</option>
-                                        <option value = "portA">New Delhi</option>
-                                        <option value = "portB">Pune</option>
-                                        <option value = "portC">Mumbai</option>
-                                        <option value = "portD">Bangalore</option>
+                                        <option value = "New Delhi">New Delhi</option>
+                                        <option value = "Pune">Pune</option>
+                                        <option value = "Mumbai">Mumbai</option>
+                                        <option value = "Bangalore">Bangalore</option>
                                     </select>
                             </div>
                             <div>
@@ -406,25 +401,29 @@
                             </div>
                             <div class="row d-flex">
                                 <div class="form-check checkboxes">
-                                    <input class="form-check-input" type="checkbox" value="" id="battery-check">
+                                    <input class="form-check-input" type="checkbox" value="Batteries" id="battery-check" 
+                                            name="product-check">
                                     <label class="form-check-label" for="battery-check">
                                         Batteries
                                     </label>
                                 </div>
                                 <div class="form-check checkboxes">
-                                    <input class="form-check-input" type="checkbox" value="" id="hazardous-check">
+                                    <input class="form-check-input" type="checkbox" value="Hazardous Materials" id="hazardous-check" 
+                                            name="product-check">
                                     <label class="form-check-label" for="hazardous-check">
                                         Hazardous Materials
                                     </label>
                                 </div>
                                 <div class="form-check checkboxes">
-                                    <input class="form-check-input" type="checkbox" value="" id="creams-check">
+                                    <input class="form-check-input" type="checkbox" value="Creams, Liquids, Powders" id="creams-check"
+                                            name="product-check">
                                     <label class="form-check-label" for="creams-check">
                                         Creams, Liquids, Powders
                                     </label>
                                 </div>
                                 <div class="form-check checkboxes">
-                                    <input class="form-check-input" type="checkbox" value="" id="none-check">
+                                    <input class="form-check-input" type="checkbox" value="Nothing Hazardous" id="none-check"
+                                            name="product-check">
                                     <label class="form-check-label" for="none-check">
                                         None of the Above
                                     </label>
