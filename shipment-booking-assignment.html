@@ -277,18 +277,123 @@
                                 <h7>Port</h7>
                             </div>
                             <div>
-                                <select required name = "supplier-dropdown" class="outer-field-padding">
-                                    <option value= "" disabled selected>Select Port</option>
-                                    <option value = "portA">Port A</option>
-                                    <option value = "portB">Port B</option>
-                                    <option value = "portC">Port C</option>
-                                    <option value = "portD">Port D</option>
-                                </select>
+                                <select required name = "port-dropdown" class="outer-field-padding">
+                                        <option value= "" disabled selected>Select Port</option>
+                                        <option value = "portA">Port A</option>
+                                        <option value = "portB">Port B</option>
+                                        <option value = "portC">Port C</option>
+                                        <option value = "portD">Port D</option>
+                                    </select>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7>Origin Trucking Services</h7>
+                        <div class="row-cols-2 d-flex">
+                            <div class="col" style="flex-basis: 90%;">
+                                <p>
+                                    Select "Yes" and Flexport will collect your cargo and deliver it to the origin Port. This will incur
+                                    a charge that is added as an individual line item on your estimate. 
+                                </p>
                             </div>
+                        </div> 
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="field-header">
+                                <h7>Will you need Flexport Origin Trucking Services?</h7>
+                            </div>
+                            <section class="btn-group incoterms-btn-group">
+                                <input type="radio" class="btn-check" name="btnradio" id="radio-yes">
+                                <label class="btn btn-outline-secondary" for="radio-yes">Yes</label>                    
+                                <input type="radio" class="btn-check" name="btnradio" id="radio-no">
+                                <label class="btn btn-outline-secondary" for="radio-no">No</label>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7>Destination Address</h7>
+                        <div class="row-cols-2 d-flex">
+                            <div class="col" style="flex-basis: 90%;">
+                                <p>
+                                    The destination addresses requires access to a dock to unload the shipment. 
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="field-header">
+                                <h7>Destination Address</h7>
+                            </div>
+                            <div>
+                                <select required name = "port-dropdown" class="outer-field-padding">
+                                        <option value= "" disabled selected>Search for Destination Address</option>
+                                        <option value = "portA">New Delhi</option>
+                                        <option value = "portB">Pune</option>
+                                        <option value = "portC">Mumbai</option>
+                                        <option value = "portD">Bangalore</option>
+                                    </select>
+                            </div>
+                            <div>
+                                <a href="#"><h9>Create New Destination Address</h9></a>
+                            </div> 
                         </div>
                     </div>
                 </div>
                 
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7>Products to be Shipped</h7>
+                        <div class="row-cols-2 d-flex">
+                            <div class="col flex-basis-90">
+                                <p>
+                                    At least one product is required. 
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="row-cols-3 d-flex">
+                                <div class="col flex-basis-20">
+                                </div>
+                                <div class="col flex-basis-60">
+                                    <div class="row d-flex justify-content-center">
+                                        <img src="./res/shipment-track.png" class="shipment-image">
+                                    </div>
+                                    <div class="row d-flex field-header">
+                                        <h5>Add products to your shipment here</h5>
+                                    </div>
+                                    <div class="row d-flex justify-content-center">
+                                        <p>To add products to your shipment, start by adding products
+                                            from your Shopify catalog or manually adding them. 
+                                        </p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-secondary">Add Products</button>
+                                    </div>
+                                    <div class="row d-flex justify-content-center">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col flex-basis-20">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <hr>
                 <div  class="row d-flex justify-content-end">
                     <button type="button" class="btn submit-btn">Submit</button>
