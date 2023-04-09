@@ -3,6 +3,7 @@
 
 :root {
     --button-color: rgb(14, 135, 10);
+    --contact-button-color : rgb(95, 71, 192);
 }
 
 .wrapper {
@@ -117,6 +118,17 @@ p {
 .container-paragraph {
     margin-left: 3%;
     margin-top: -1%;
+}
+.contact-support-btn {
+    border-radius: 25px !important;
+    background-color: var(--contact-button-color) !important;
+    color: white !important;
+    float: right;
+    margin-right: 2% !important;
+}
+
+.date-class{
+    margin-left: 5%;
 }
 
 /* The search field */

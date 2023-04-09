@@ -19,10 +19,10 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" 
                 integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"> </script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"> </script> 
+        
 
     </head>
     <body>
@@ -453,8 +453,7 @@
                                 <p>To provide you the best rates, you must select a date within the next 6 weeks.</p>
                             </div>
                             <div class="row d-flex">
-                                <p class="container-paragraph">Click on field to select date range</p>
-                                <input type="text" name="daterange" id="text-date-range" class="outer-field-padding"/>
+                                <input id ="date-input" class="date date-class" style="width: 300px;" type="text">
                             </div>
                         </div>
                     </div>
@@ -465,14 +464,18 @@
                     <button type="button" class="btn submit-btn" onclick="getFormValues()">Submit Booking Request</button>
                 </div>
             </div>
+            <div class="row">
+                <div class="col">
+                  <button class="btn contact-support-btn"><i class="fa fa-comment"></i> Contact Support</button>
+                </div>
+            </div>
         </div>
     </body>
 </html>
 
-<script>
-    $(function() {
-      $('input[name="daterange"]').daterangepicker({
-        opens: 'left'
-      })
-    });
+<script type="text/javascript">
+    $(function () 
+    {
+        $('#date-input').datepicker({format: 'dd-mm-yyyy'});
+    });    
 </script>
