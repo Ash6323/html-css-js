@@ -45,6 +45,14 @@
 .field-header h7 {
     padding: 3%;
 }
+.field-header-bold {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.field-header-bold h7 {
+    font-weight: bold;
+    padding: 3%;
+}
 .field-header h5 {
     padding: 3%;
     text-align: center;
@@ -105,6 +113,10 @@ p {
     margin-top: 3% !important;
     width: 200px !important;
     height: 100px;
+}
+.container-paragraph {
+    margin-left: 3%;
+    margin-top: -1%;
 }
 
 /* The search field */
