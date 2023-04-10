@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./res/IX-logo-1.png">
+        <title>Book Shipment</title>
+        <link rel="stylesheet" href="./css/shipment-booking.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+        <script src="./js/shipment-booking.js"></script>
+        <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" 
+                integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" 
+                integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"> </script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"> </script> 
+        
+
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container shadow">
+                <div class="row d-flex pt-2">
+                    <h5>Create Booking</h5>
+                </div>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7 class="container-header">Booking Name</h7>
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="field-header">
+                                <h7>Booking Name</h7>
+                            </div>
+                            <div>
+                                <input type="text" id="booking-name" name="booking-name" 
+                                        placeholder="Description of Shipment" class="outer-field-padding">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7 class="container-header">Involved Parties</h7>
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="field-header">
+                                <h7>Consignee <i class="bi bi-question-circle-fill"></i></h7>
+                            </div>
+                            <div>
+                                <select required id = "consignee-dropdown" class="outer-field-padding">
+                                    <option value= "" disabled selected>Select Consignee</option>
+                                    <option value = "Consignee A">Consignee A</option>
+                                    <option value = "Consignee B">Consignee B</option>
+                                    <option value = "Consignee C">Consignee C</option>
+                                    <option value = "Consignee D">Consignee D</option>
+                                    <option value = "Consignee E">Consignee E</option>
+                                    <option value = "Consignee F">Consignee F</option>
+                                    <option value = "Consignee G">Consignee G</option>
+                                </select>
+                            </div>
+                            <div class="field-header">
+                                <h7>Supplier</h7>
+                            </div>
+                            <div>
+                                <select required id = "supplier-dropdown" class="outer-field-padding">
+                                    <option value= "" disabled selected>Select Supplier</option>
+                                    <option value = "Supplier A">Supplier A</option>
+                                    <option value = "Supplier B">Supplier B</option>
+                                    <option value = "Supplier C">Supplier C</option>
+                                    <option value = "Supplier D">Supplier D</option>
+                                </select>
+                            </div>
+                            <div>
+                                <a href="#"><h9>Create New Supplier</h9></a>
+                            </div>
+                            <div class="field-header">
+                                <h7>Incoterms <i class="bi bi-question-circle-fill"></i></h7>
+                            </div>
+                            <div>
+                                <section class="btn-group incoterms-btn-group">
+                                    <input type="radio" class="btn-check" name="btnradio" id="radio1" value="EXW">
+                                    <label class="btn btn-outline-secondary" for="radio1">EXW</label>
+                                    
+                                    <input type="radio" class="btn-check" name="btnradio" id="radio2" value="FOB">
+                                    <label class="btn btn-outline-secondary" for="radio2">FOB</label>
+                                    
+                                    <input type="radio" class="btn-check" name="btnradio" id="radio3" value="FCA">
+                                    <label class="btn btn-outline-secondary" for="radio3">FCA</label>
+                                </section>
+                            </div>
+                            <div>
+                                <p><a class="link-left-align" href="#">Contact us</a> if you can not find your incoterms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7 class="container-header">Cargo Details</h7>
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="tab-container">
+                                <ul class="nav nav-tabs nav-justified mb-3" role="tablist">
+                                    <li role="presentation" class="nav-item">
+                                        <a 
+                                            class="nav-link active" id="cargo-tab-1" data-toggle="tab"
+                                            href="#cargo-tabs-1" aria-controls="cargo-tabs-1" aria-selected="true" role="tab">
+                                            Less than Container
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="nav-item">
+                                        <a
+                                            class="nav-link" id="cargo-tab-2" data-toggle="tab"
+                                            href="#cargo-tabs-2" aria-controls="cargo-tabs-2" aria-selected="false" role="tab">
+                                            Full Containers
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="cargo-tab-content">
+                                    <div class="tab-pane show active fade " id="cargo-tabs-1" role="tabpanel" aria-labelledby="cargo-tab-1">
+                                        <div class="row-cols-2 d-flex">
+                                            <div class="col">
+                                                <div class="field-header">
+                                                    <h7>Total Weight</h7>
+                                                </div>
+                                                <div>
+                                                    <input type="text" id="ltc-total-weight" placeholder="kg" class="outer-field-padding">
+                                                </div>
+                                                <div class="field-header">
+                                                    <h7>Package Type</h7>
+                                                </div>
+                                                <div>
+                                                    <select required id = "ltc-package-dropdown" class="outer-field-padding">
+                                                        <option value= "" disabled selected>Select Package Type</option>
+                                                        <option value = "Package Type 1">Package Type 1</option>
+                                                        <option value = "Package Type 2">Package Type 2</option>
+                                                        <option value = "Package Type 3">Package Type 3</option>
+                                                        <option value = "Package Type 4">Package Type 4</option>
+                                                    </select>
+                                                </div>
+                                            </div> 
+                                            <div class="col">
+                                                <div class="field-header">
+                                                    <h7>Total Volume</h7>
+                                                </div>
+                                                <div>
+                                                    <input type="text" id="ltc-total-volume" placeholder="cbm" class="outer-field-padding">
+                                                </div>
+                                                <div class="field-header">
+                                                    <h7>Total Quantity</h7>
+                                                </div>
+                                                <div>
+                                                    <input type="text" id="ltc-total-qty" name="ltc-total-qty" class="outer-field-padding">
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="cargo-tabs-2" role="tabpanel" aria-labelledby="cargo-tab-2">
+                                        <div class="row-cols-2 d-flex">
+                                            <div class="col">
+                                                <div class="field-header">
+                                                    <h7>Number of Containers</h7>
+                                                </div>
+                                                <div>
+                                                    <input type="text" id="num-of-containers" name="num-of-containers" 
+                                                            class="outer-field-padding">
+                                                </div>
+                                                <div class="field-header">
+                                                    <h7>Total Weight</h7>
+                                                </div>
+                                                <div>
+                                                    <input type="text" id="fc-total-weight" placeholder="kg" class="outer-field-padding">
+                                                </div>
+                                                <div class="field-header">
+                                                    <h7>Package Type</h7>
+                                                </div>
+                                                <div>
+                                                    <select required id = "fc-package-dropdown" class="outer-field-padding">
+                                                        <option value= "" disabled selected>Select Package Type</option>
+                                                        <option value = "Package Type 1">Package Type 1</option>
+                                                        <option value = "Package Type 2">Package Type 2</option>
+                                                        <option value = "Package Type 3">Package Type 3</option>
+                                                        <option value = "Package Type 4">Package Type 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="field-header">
+                                                    <h7>Container Type</h7>
+                                                </div>
+                                                <div>
+                                                    <select required id = "container-type-dropdown" class="container-type-dropdown">
+                                                        <option value= "" disabled selected>Select Container Type</option>
+                                                        <option value = "40 ft">40 ft</option>
+                                                        <option value = "60 ft">60 ft</option>
+                                                        <option value = "80 ft">80 ft</option>
+                                                        <option value = "100 ft">100 ft</option>
+                                                    </select>
+                                                </div>
+                                                <div class="field-header">
+                                                    <h7>Total Volume</h7>
+                                                </div>
+                                                <div>
+                                                    <input type="text" id="fc-total-volume" placeholder="cbm" class="outer-field-padding">
+                                                </div>
+                                                <div class="field-header">
+                                                    <h7>Total Quantity</h7>
+                                                </div>
+                                                <div>
+                                                    <input type="text" id="fc-total-qty" class="outer-field-padding">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7 class="container-header-bold">Origin Address</h7>
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="field-header">
+                                <h7>Origin Address</h7>
+                            </div>
+                            <div class="dropdown">
+                                <!-- <button onclick="myFunction()" class="dropbtn">Dropdown</button> -->
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <input type="text" placeholder="Search.." id="origin-address" onkeyup="filterFunction()">
+                                        <a href="#Pune">Pune</a>
+                                        <a href="#Mumbai">Mumbai</a>
+                                        <a href="#New Delhi">New Delhi</a>
+                                        <a href="#Chennai">Chennai</a>
+                                        <a href="#Bangalore">Bangalore</a>
+                                        <a href="#Vizag">Vizag</a>
+                                        <a href="#Surat">Surat</a>
+                                    </div>
+                            </div>
+                            <div>
+                                <a href="#"><h9>Create New Origin Address</h9></a>
+                            </div> 
+
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7 class="container-header-bold">Origin Port</h7>
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="field-header">
+                                <h7>Port</h7>
+                            </div>
+                            <div>
+                                <select required id = "port-dropdown" class="outer-field-padding">
+                                    <option value= "" disabled selected>Select Port</option>
+                                    <option value = "Port A">Port A</option>
+                                    <option value = "Port B">Port B</option>
+                                    <option value = "Port C">Port C</option>
+                                    <option value = "Port D">Port D</option>
+                                </select>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7 class="container-header-bold">Origin Trucking Services</h7>
+                        <div class="row-cols-2 d-flex">
+                            <div class="col" style="flex-basis: 90%;">
+                                <p>
+                                    Select "Yes" and Flexport will collect your cargo and deliver it to the origin Port. This will incur
+                                    a charge that is added as an individual line item on your estimate. 
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="field-header-bold">
+                                <h7>Will you need Flexport Origin Trucking Services?</h7>
+                            </div>
+                            <section class="btn-group yes-no-btn-group">
+                                <input type="radio" class="btn-check" name="flexport-radio" id="radio-yes" value = "Yes">
+                                <label class="btn btn-outline-secondary yes-no-btn" for="radio-yes">Yes</label>
+                                <input type="radio" class="btn-check" name="flexport-radio" id="radio-no" value = "No">
+                                <label class="btn btn-outline-secondary yes-no-btn" for="radio-no">No</label>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7 class="container-header-bold">Destination Address</h7>
+                        <div class="row-cols-2 d-flex">
+                            <div class="col" style="flex-basis: 90%;">
+                                <p>
+                                    The destination addresses requires access to a dock to unload the shipment. 
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="field-header">
+                                <h7>Destination Address</h7>
+                            </div>
+                            <div>
+                                <select required id = "destination-address-dropdown" class="outer-field-padding">
+                                        <option value= "" disabled selected>Search for Destination Address</option>
+                                        <option value = "New Delhi">New Delhi</option>
+                                        <option value = "Pune">Pune</option>
+                                        <option value = "Mumbai">Mumbai</option>
+                                        <option value = "Bangalore">Bangalore</option>
+                                    </select>
+                            </div>
+                            <div>
+                                <a href="#"><h9>Create New Destination Address</h9></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7 class="container-header">Products to be Shipped</h7>
+                        <div class="row-cols-2 d-flex">
+                            <div class="col flex-basis-90">
+                                <p>
+                                    At least one product is required. 
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="row-cols-3 d-flex">
+                                <div class="col flex-basis-20">
+                                </div>
+                                <div class="col flex-basis-60">
+                                    <div class="row d-flex justify-content-center">
+                                        <img src="./res/shipment-track.png" class="shipment-image">
+                                    </div>
+                                    <div class="row d-flex field-header">
+                                        <h5>Add products to your shipment here</h5>
+                                    </div>
+                                    <div class="row d-flex justify-content-center">
+                                        <p style="text-align: justify;">To add products to your shipment, start by adding
+                                            them from your Shopify catalog or by manually adding them. 
+                                        </p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-secondary">Add Products</button>
+                                    </div>
+                                    <div class="row d-flex justify-content-center">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col flex-basis-20">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7 class="container-header">Hazardous Materials</h7>
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="field-header">
+                                <h7>Do any of your products contain the following?</h7>
+                            </div>
+                            <div class="row d-flex">
+                                <div class="form-check checkboxes">
+                                    <input class="form-check-input" type="checkbox" value="Batteries" id="battery-check" 
+                                            name="product-check">
+                                    <label class="form-check-label" for="battery-check">
+                                        Batteries
+                                    </label>
+                                </div>
+                                <div class="form-check checkboxes">
+                                    <input class="form-check-input" type="checkbox" value="Hazardous Materials" id="hazardous-check" 
+                                            name="product-check">
+                                    <label class="form-check-label" for="hazardous-check">
+                                        Hazardous Materials
+                                    </label>
+                                </div>
+                                <div class="form-check checkboxes">
+                                    <input class="form-check-input" type="checkbox" value="Creams, Liquids, Powders" id="creams-check"
+                                            name="product-check">
+                                    <label class="form-check-label" for="creams-check">
+                                        Creams, Liquids, Powders
+                                    </label>
+                                </div>
+                                <div class="form-check checkboxes">
+                                    <input class="form-check-input" type="checkbox" value="Nothing Hazardous" id="none-check"
+                                            name="product-check">
+                                    <label class="form-check-label" for="none-check">
+                                        None of the Above
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="row-cols-2 d-flex">
+                    <div class="col flex-basis-35">
+                        <h7 class="container-header">Origin Cutoff Date</h7>
+                    </div>
+                    <div class="col flex-basis-65">
+                        <div class="field-container">
+                            <div class="field-header-bold">
+                                <h7>When will your cargo be ready?</h7>
+                            </div>
+                            <div class = "container-paragraph">
+                                <span class="span-padding">To provide you the best rates, you must select a date within the next 6 weeks.</span>
+                            </div>
+                            <div class="row d-flex">
+                                <input id ="date-input" class="date date-class" type="text" placeholder="Click to select date">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div  class="row d-flex justify-content-end">
+                    <button type="button" class="btn submit-btn" onclick="getFormValues()">Submit Booking Request</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                  <button class="btn contact-support-btn"><i class="fa fa-comment"></i> Contact Support</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+    $(function () 
+    {
+        $('#date-input').datepicker({format: 'dd-mm-yyyy'});
+    });    
+</script>

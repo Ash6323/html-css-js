@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="./res/IX-logo-1.png">
+        <title>About</title>
+        <link rel="stylesheet" href="./css/responsiveRegistration.css">
+        <link rel="stylesheet" href="./css/bootstrap-card.css">
+        <link rel="stylesheet" href="./css/bootstrap-btn.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="./registration-form-home.html">Home</a>
+            <a href="./registration-form.html">Registration</a>
+            <a href="#contact">Contact</a>
+            <a class="active" href="./registration-form-about.html">About</a>
+        </div> 
+        <h1>About</h1>
+        <div class="container">
+            <pre style="font-size: large;">
+                We are more than a company, we are a family!
+                We are a diverse yet close-knit group of people united by a passion for technology.
+                At IncubXperts, we believe in working hard, playing harder and drinking a whole lot of tea (and coffee)!
+            </pre>
+            <pre style="font-size: large; margin-right: 100px;" dir="rtl">Team IX-</pre>
+            <hr>
+            <p> <b>Using b tag!</b> </p>
+            <p> Using<strong> strong </strong>tag!</p>
+            <p><i>Using <u>Italic</u> text...</i></p>
+            <p>Using <mark>Mark</mark> tag for highlighting.</p>
+            <p>My favorite color is <del style="color: rgb(208, 8, 8);">RED</del> <span style="color:blue">BLUE.</span></p>
+            <p><b>Water-</b> H<sub>2</sub>O, <b>Methane-</b> CH<sub>4</sub>, 2<sup>2 </sup>= 4</p>
+            <blockquote cite="https://en.wikipedia.org/wiki/Supercar">
+                A supercar also called exotic car is a loosely defined description of street-legal, high-performance luxury sports car. 
+                Since the 2000s or 2010s, the term hypercar has come into use for the highest performing supercars. 
+                Supercars commonly serve as the flagship model within a vehicle manufacturer's lineup of sports cars.
+            </blockquote>
+            <p><q> No one can motivate you, until you motivate yourself. </q></p>
+            <p><abbr title="Indian Space Research Organization">ISRO</abbr> is the national space agency of India, 
+                                                                headquartered in Bengaluru.</p>
+
+            <p>Less-than sign: &lt;</p>
+            <p>Greater-than sign: &gt;</p>
+            <hr>
+            <h3>Using SVG</h3>
+            <svg width="700" height="200" >
+                <path d="M 50 80 L 55 75 L 100 130 L 200 50 L 205 55 L 100 155" style="stroke:black; stroke-width:2;"/>
+            </svg>
+            <hr>
+            <h3>Using Canvas</h3>
+            <canvas id="myCanvas" width="300" height="200"></canvas>
+            <script>
+                var canvas = document.getElementById("myCanvas");
+                var ctx = canvas.getContext("2d");
+
+                var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                grd.addColorStop(0, "blue");
+                grd.addColorStop(0.5, "yellow");
+                grd.addColorStop(1, "green");
+                ctx.fillStyle = grd;
+                ctx.fillRect(20, 20, 200, 100);
+            </script>
+            <hr>
+            <h3>Youtube Video Embed</h3>
+            <iframe frameborder="0" width="500" height="320" src="https://www.youtube.com/embed/EpbmaJbDzlQ">
+            </iframe>
+            <hr>
+            <h3>Audio Embed</h3>
+            <audio controls>
+                <source src="./res/audio.mp3" type="audio/mp3">
+            </audio>
+            <hr>
+            <h3>Video Embed</h3>
+            <video width="400" controls>  
+                <source src="./res/video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,213 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=PT+Sans:400,700";
+
+:root {
+    --button-color: rgb(14, 135, 10);
+    --contact-button-color : rgb(95, 71, 192);
+}
+
+.wrapper {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    margin-top: 3%;
+    width: 70% !important;
+    box-shadow: 0px 0px 2px 3px rgba(97, 92, 92, 0.621);
+    border-radius: 4px 4px;
+    background-color:rgba(128, 128, 128, 0.185);
+    margin-bottom: 3%;
+}
+.field-container {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px 2px rgba(161, 156, 156, 0.621);
+    border-radius: 4px 4px;
+    padding-bottom: 1%;
+    margin-right: 2%;
+}
+.flex-basis-35 {
+    flex-basis: 35% !important;
+}
+.flex-basis-20 {
+    flex-basis: 20% !important;
+}
+.flex-basis-65 {
+    flex-basis: 65% !important;
+}
+.flex-basis-60 {
+    flex-basis: 60% !important;
+}
+.flex-basis-90 {
+    flex-basis: 90% !important;
+}
+.field-header {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+h5 {
+    margin-top: 1% !important;
+    margin-left: 1%;
+    margin-bottom: 2% !important;
+}
+.container-header {
+    margin-left: 3%;
+    font-weight: 500;
+}
+.container-header-bold {
+    margin-left: 3%;
+    font-weight: 700;
+}
+.col p {
+    margin-left: 3% !important;
+}
+.link-left-align {
+    margin-left: -3% !important;
+}
+.span-padding {
+    display: block;
+    font-size: 14px;
+    padding-top: 1% !important;
+    padding-bottom: 1% !important;
+}
+.field-header h7 {
+    padding: 3%;
+}
+.field-header-bold {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.field-header-bold h7 {
+    font-weight: 600;
+    padding: 3%;
+}
+.field-header h5 {
+    padding: 3%;
+    text-align: center;
+}
+.btn-secondary {
+    background-color: white !important;
+    color: rgb(108, 108, 108) !important;
+    font-size: small !important;
+    font-weight: 600 !important;
+    margin-bottom: 5%;
+}
+.yes-no-btn-group {
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+}
+.yes-no-btn {
+    margin-right: 10% !important;
+    border-radius: 5px !important;
+    font-weight: 600 !important;
+}
+
+.checkboxes {
+    margin-left: 5%;
+}
+input[type=text], select
+{
+    width: 93%;
+    padding: 7px;
+    border: 1px solid rgba(168, 166, 166, 0.726);
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 1%;
+}
+.outer-field-padding
+{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+a {
+    font-size: 14px;
+    padding-left: 3%;
+}
+p {
+    font-size: 14px;
+    padding-top: 2%;
+}
+.incoterms-btn-group {
+    margin-left: 3%;
+    border: 1px solid rgba(168, 166, 166, 0.726);
+}
+.btn-border {
+    border: 1px solid rgba(168, 166, 166, 0.726);
+}
+.submit-btn {
+    background-color: var(--button-color) !important;
+    color: white !important;
+    border-radius: 4px;
+    float: right;
+    width: 18% !important;
+    margin-right: 1%;
+    margin-top: 2% !important;
+    margin-bottom: 4%;
+    font-size: small !important;
+}
+.shipment-image {
+    margin-top: 3% !important;
+    width: 200px !important;
+    height: 100px;
+}
+.container-paragraph {
+    margin-left: 3%;
+    margin-top: -1%;
+}
+.contact-support-btn {
+    border-radius: 25px !important;
+    background-color: var(--contact-button-color) !important;
+    color: white !important;
+    float: right;
+    margin-right: 2% !important;
+}
+.date-class{
+    margin-left: 5%;
+    /* width: 300px !important; */
+    width: 40% !important;
+}
+
+/* The search field */
+#myInput {
+    box-sizing: border-box;
+    /* background-image: url('searchicon.png'); */
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* The search field when it gets focus/clicked on */
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    /* display: none; */
+    position: relative;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
