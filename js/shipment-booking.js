@@ -52,7 +52,6 @@ function getFormValues()
 
 
     totalWeight = document.getElementById("ltc-total-weight").value;
-
     if (!totalWeight.match(digits)) 
     {
         alert("Please enter a valid input -> (Total Weight)");
@@ -75,7 +74,6 @@ function getFormValues()
     }
 
     totalVolume = document.getElementById("ltc-total-volume").value;
-
     if (!totalVolume.match(digits)) 
     {
         alert("Please enter a valid input -> (Total Volume)");
@@ -87,8 +85,7 @@ function getFormValues()
     }
 
     totalQuantity = document.getElementById("ltc-total-qty").value;
-
-    if (!totalVolume.match(digits)) 
+    if (!totalQuantity.match(digits)) 
     {
         alert("Please enter a valid input -> (Total Quantity)");
         return false;
@@ -98,9 +95,7 @@ function getFormValues()
         singleContainerFieldCount++;
     }
 
-
     numberOfContainers = document.getElementById("num-of-containers").value;
-
     if (!numberOfContainers.match(digits) && singleContainerFieldCount==0) 
     {
         alert("Please enter a valid input -> (Number of Containers)");
@@ -123,7 +118,6 @@ function getFormValues()
     }
 
     fcTotalWeight = document.getElementById("fc-total-weight").value;
-
     if (!fcTotalWeight.match(digits) && singleContainerFieldCount==0) 
     {
         alert("Please enter a valid input -> (Total Weight)");
@@ -135,7 +129,6 @@ function getFormValues()
     }
 
     fcTotalVolume = document.getElementById("fc-total-volume").value;
-
     if (!fcTotalVolume.match(digits) && singleContainerFieldCount==0) 
     {
         alert("Please enter a valid input -> (Total Volume)");
@@ -158,7 +151,6 @@ function getFormValues()
     }
 
     fcTotalQuantity = document.getElementById("fc-total-qty").value;
-
     if (!fcTotalQuantity.match(digits) && singleContainerFieldCount==0)
     {
         alert("Please enter a valid input -> (Total Quantity)");
@@ -169,14 +161,11 @@ function getFormValues()
         manyContainersFieldCount++;
     }
 
-    
-
     if(singleContainerFieldCount>0 && manyContainersFieldCount>0)
     {
         alert("Ambiguous Data Entered. Please fill data in either 'Less than Container' or 'Full Containers' Section ");
         return false;
     }
-
 
     const originAddressDropdown = document.getElementById("origin-address").value;
     if (originAddressDropdown == null || originAddressDropdown == "")
@@ -251,6 +240,13 @@ function getFormValues()
         return false;
     }
 
+    const dateInput = document.getElementById("date-input").value;
+    if (dateInput == null || dateInput == "")
+    {  
+        alert("Please Select a Date");
+        return false;
+    }
+
     console.log("Booking Name: "+ bookingName);
     console.log("Consignee: " + consigneeDropdown);
     console.log("Supplier: " + supplierDropdown);
@@ -264,7 +260,7 @@ function getFormValues()
     console.log("Whether Opted for Flexport Service: " + flexportChoice);
     console.log("Destination Address: " + destinationAddressDropdown);
     console.log("Product Contains: " + productContent);
-
+    console.log("Origin Cutoff Date: "+ dateInput);
 }
 
 /* When the user clicks on the button,
