@@ -49,53 +49,89 @@ function getFormValues()
     var digits =  /^[1-9]\d*$/g ;
     var singleContainerFieldCount = 0;
     var manyContainersFieldCount = 0;
+    
+    //Less than Container Fields
+    const totalWeight = document.getElementById("ltc-total-weight").value;
+    const packageTypeDropdown = document.getElementById("ltc-package-dropdown").value;
+    const totalVolume = document.getElementById("ltc-total-volume").value;
+    const totalQuantity = document.getElementById("ltc-total-qty").value;
 
+    //Full Container Fields
+    const numberOfContainers = document.getElementById("num-of-containers").value;
+    const fcPackageTypeDropdown = document.getElementById("fc-package-dropdown").value;
+    const fcTotalWeight = document.getElementById("fc-total-weight").value;
+    const fcTotalVolume = document.getElementById("fc-total-volume").value;
+    const containerTypeDropdown = document.getElementById("container-type-dropdown").value;
+    const fcTotalQuantity = document.getElementById("fc-total-qty").value;
 
-    totalWeight = document.getElementById("ltc-total-weight").value;
-    if (!totalWeight.match(digits)) 
+    //Counting Populated 'Full Container' Fields
+    if(numberOfContainers.match(digits))
+    {
+        manyContainersFieldCount++;
+    }
+    if(!(fcPackageTypeDropdown == null || fcPackageTypeDropdown == ""))
+    {
+        manyContainersFieldCount++;
+    }
+    if(fcTotalWeight.match(digits))
+    {
+        manyContainersFieldCount++;
+    }
+    if(fcTotalVolume.match(digits))
+    {
+        manyContainersFieldCount++;
+    }
+    if(!(containerTypeDropdown == null || containerTypeDropdown == ""))
+    {
+        manyContainersFieldCount++;
+    }
+    if(fcTotalQuantity.match(digits))
+    {
+        manyContainersFieldCount++;
+    }
+
+    //'Less than Container' Fields Validation
+    if (!totalWeight.match(digits) && manyContainersFieldCount==0) 
     {
         alert("Please enter a valid input -> (Total Weight)");
         return false;
     }
-    else
+    else if(totalWeight.match(digits))
     {
         singleContainerFieldCount++;
     }
-    
-    const packageTypeDropdown = document.getElementById("ltc-package-dropdown").value;
-    if (packageTypeDropdown == null || packageTypeDropdown == "")
+
+    if ((packageTypeDropdown == null || packageTypeDropdown == "") && manyContainersFieldCount==0)
     {  
         alert("Please Select a Package Type");
         return false;
     }
-    else
+    else if(!(packageTypeDropdown == null || packageTypeDropdown == ""))
     {
         singleContainerFieldCount++;
     }
 
-    totalVolume = document.getElementById("ltc-total-volume").value;
-    if (!totalVolume.match(digits)) 
+    if (!totalVolume.match(digits) && manyContainersFieldCount==0) 
     {
         alert("Please enter a valid input -> (Total Volume)");
         return false;
     }
-    else
+    else if(totalVolume.match(digits))
     {
         singleContainerFieldCount++;
     }
 
-    totalQuantity = document.getElementById("ltc-total-qty").value;
-    if (!totalQuantity.match(digits)) 
+    if (!totalQuantity.match(digits) && manyContainersFieldCount==0) 
     {
         alert("Please enter a valid input -> (Total Quantity)");
         return false;
     }
-    else
+    else if(totalQuantity.match(digits))
     {
         singleContainerFieldCount++;
     }
 
-    numberOfContainers = document.getElementById("num-of-containers").value;
+    //'Full Container' Fields Validation
     if (!numberOfContainers.match(digits) && singleContainerFieldCount==0) 
     {
         alert("Please enter a valid input -> (Number of Containers)");
@@ -106,7 +142,7 @@ function getFormValues()
         manyContainersFieldCount++;
     }
 
-    const fcPackageTypeDropdown = document.getElementById("fc-package-dropdown").value;
+
     if ((fcPackageTypeDropdown == null || fcPackageTypeDropdown == "") && singleContainerFieldCount==0)
     {  
         alert("Please Select a Package Type");
@@ -117,7 +153,7 @@ function getFormValues()
         manyContainersFieldCount++;
     }
 
-    fcTotalWeight = document.getElementById("fc-total-weight").value;
+
     if (!fcTotalWeight.match(digits) && singleContainerFieldCount==0) 
     {
         alert("Please enter a valid input -> (Total Weight)");
@@ -128,7 +164,7 @@ function getFormValues()
         manyContainersFieldCount++;
     }
 
-    fcTotalVolume = document.getElementById("fc-total-volume").value;
+
     if (!fcTotalVolume.match(digits) && singleContainerFieldCount==0) 
     {
         alert("Please enter a valid input -> (Total Volume)");
@@ -139,7 +175,7 @@ function getFormValues()
         manyContainersFieldCount++;
     }
 
-    const containerTypeDropdown = document.getElementById("container-type-dropdown").value;
+
     if ((containerTypeDropdown == null || containerTypeDropdown == "") && singleContainerFieldCount==0)
     {  
         alert("Please Select a Container Type");
@@ -150,7 +186,7 @@ function getFormValues()
         manyContainersFieldCount++;
     }
 
-    fcTotalQuantity = document.getElementById("fc-total-qty").value;
+
     if (!fcTotalQuantity.match(digits) && singleContainerFieldCount==0)
     {
         alert("Please enter a valid input -> (Total Quantity)");
@@ -219,6 +255,7 @@ function getFormValues()
     }
 
     var productCheckbox = document.getElementsByName('product-check');
+    var nothingHazardousCheckbox = document.getElementById('none-check');
     var productCheckBlankCount = 0;
     var productContent = [];
     var productCheckIndex = 0;
@@ -233,7 +270,12 @@ function getFormValues()
             productContent[productCheckIndex] = productCheckbox[i].value;
             productCheckIndex++;
         }
-    }   
+    }
+    if(nothingHazardousCheckbox.checked && productCheckIndex>1)
+    {
+        alert("Confliciting Data -> (Product contents)");
+        return false;
+    }
     if(productCheckBlankCount>=4)
     {
         alert("Please Confirm your Product contents");
@@ -247,14 +289,31 @@ function getFormValues()
         return false;
     }
 
+    //Displaying Entered Form Data on Console 
     console.log("Booking Name: "+ bookingName);
     console.log("Consignee: " + consigneeDropdown);
     console.log("Supplier: " + supplierDropdown);
     console.log("Incoterm: " + incoterm);
-    console.log("Total Weight: " + totalWeight);
-    console.log("Package Type: " + packageTypeDropdown);
-    console.log("Total Volume: " + totalVolume);
-    console.log("Total Quantity: " + totalQuantity);
+
+    if(singleContainerFieldCount>0)
+    {
+        console.log("Cargo Details: Less than one Container");
+        console.log("Total Weight: " + totalWeight);
+        console.log("Total Volume: " + totalVolume);
+        console.log("Package Type: " + packageTypeDropdown);
+        console.log("Total Quantity: " + totalQuantity);
+    }
+    if(manyContainersFieldCount>0)
+    {
+        console.log("Cargo Details: More than one Container");
+        console.log("Number of Containers: "+ numberOfContainers);
+        console.log("Container Type: " + containerTypeDropdown);
+        console.log("Total Weight: " + fcTotalWeight);
+        console.log("Total Volume: " + fcTotalVolume);
+        console.log("Package Type: " + fcPackageTypeDropdown);
+        console.log("Total Quantity: " + fcTotalQuantity);
+    }
+    
     console.log("Origin Address: " + originAddressDropdown);
     console.log("Port: " + portDropdown);
     console.log("Whether Opted for Flexport Service: " + flexportChoice);
